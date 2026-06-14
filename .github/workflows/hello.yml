@@ -28,5 +28,9 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
 
+      - name: Check numpy version
+        run: python -c "import numpy; print(numpy.__version__)"
+        
+
       - name: print Message
         run: echo "Build Success - requirements installed"
