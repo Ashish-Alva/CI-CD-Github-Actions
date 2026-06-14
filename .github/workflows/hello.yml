@@ -8,12 +8,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: print Message
-      run: echo "Hello World"
+      - name: print Message
+        run: echo "Hello World"
 
   hi:
     runs-on: ubuntu-latest
 
     steps:
-    - name: print Message
-      run: echo "Hi World"
+      - name: print Message
+        run: echo "Hi World"
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: import requirements
+        run: pip install -r requirements.txt
+
+      - name: print Message
+        run: echo "Build Success - requirements installed"
