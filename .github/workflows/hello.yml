@@ -10,3 +10,10 @@ jobs:
     steps:
     - name: print Message
       run: echo "Hello World"
+
+  hi:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: print Message
+      run: echo "Hi World"
